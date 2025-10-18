@@ -16,7 +16,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+private slots:
+    void seanceclick();
+    void employeclick();
+    void clientclick();
+    void vehiculeclick();
+    void contratclick();
 private:
     Ui::MainWindow *ui;
 };
