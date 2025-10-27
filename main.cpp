@@ -7,10 +7,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    // ✅ Création via la méthode statique instance()
     Connection *c = Connection::instance();
 
-    // ✅ Appel correct de la méthode createConnect()
     bool test = c->createConnect();
 
     if (test) {

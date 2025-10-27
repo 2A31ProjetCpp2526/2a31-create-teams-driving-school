@@ -17,15 +17,15 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_valider_clicked();   // Ajouter
-    void on_pushButton_supprimer_clicked(); // Supprimer
+    void on_pushButton_valider_clicked();
+    void on_pushButton_supprimer_clicked();
     void on_checkBox_modifier_clicked();
 
 private:
     Ui::MainWindow *ui;
-    Vehicule V; // Objet global
+    Vehicule V;
 
     void chargerTableau();
 };
 
-#endif // MAINWINDOW_H
+#endif

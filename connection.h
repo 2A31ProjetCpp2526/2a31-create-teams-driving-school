@@ -7,16 +7,16 @@
     class Connection
 {
 public:
-    static Connection* instance();  // Accès à l’instance unique
-    bool createConnect();           // Méthode pour établir la connexion
+    static Connection* instance();
+    bool createConnect();
 
 private:
-    Connection();                   // Constructeur privé
-    ~Connection();                  // Destructeur privé
-    Connection(const Connection&) = delete;            // Suppression du constructeur de copie
-    Connection& operator=(const Connection&) = delete; // Suppression de l’opérateur d’affectation
+    Connection();
+    ~Connection();
+    Connection(const Connection&) = delete;
+    Connection& operator=(const Connection&) = delete;
 
-    static Connection* p_instance;  // Instance unique
+    static Connection* p_instance;
 };
 
-#endif // CONNECTION_H
+#endif
