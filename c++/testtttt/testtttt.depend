@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1741794372 source:c:\users\msi\desktop\app1_2023\testtttt\commercial.cpp
+	"Commercial.h"
+	<iostream>
+
+1741794358 c:\users\msi\desktop\app1_2023\testtttt\commercial.h
+	"Employe.h"
+
+1741795046 c:\users\msi\desktop\app1_2023\testtttt\employe.h
+	<string>
+	<iostream>
+
+1741794344 source:c:\users\msi\desktop\app1_2023\testtttt\employe.cpp
+	"Employe.h"
+	<iostream>
+
+1741794455 source:c:\users\msi\desktop\app1_2023\testtttt\personalcommercial.cpp
+	"Personalcommercial.h"
+	<iostream>
+
+1741794385 c:\users\msi\desktop\app1_2023\testtttt\personalcommercial.h
+	<vector>
+	"Commercial.h"
+
+1741795152 source:c:\users\msi\desktop\app1_2023\testtttt\main.cpp
+	"Personalcommercial.h"
+	"Commercial.h"
+	<iostream>
+

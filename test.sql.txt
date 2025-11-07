@@ -1,0 +1,34 @@
+-- 1. Supprime l’ancienne table si elle existe
+BEGIN
+   EXECUTE IMMEDIATE 'DROP TABLE EMPLOYE CASCADE CONSTRAINTS';
+EXCEPTION
+   WHEN OTHERS THEN
+      IF SQLCODE != -942 THEN
+         RAISE;
+      END IF;
+END;
+/
+
+-- 2. Crée la table sans clause IDENTITY
+CREATE TABLE EMPLOYE (
+    ID_EMPLOYE NUMBER PRIMARY KEY,
+    NOM_EMPLOYE VARCHAR2(100),
+    PRENOM VARCHAR2(100),
+    POSTE VARCHAR2(100),
+    MOT_DE_PASSEE VARCHAR2(100),
+    TEL_EMPLOYE VARCHAR2(20),
+    DATE_EMBAUCHE DATE
+);
+
+-- 3. Crée une séquence pour générer les IDs
+CREATE SEQUENCE employe_seq START WITH 1 INCREMENT BY 1;
+
+-- 4. Crée un trigger pour remplir automatiquement le champ ID
+CREATE OR REPLACE TRIGGER employe_bi
+BEFORE INSERT ON EMPLOYE
+FOR EACH ROW
+WHEN (new.ID_EMPLOYE IS NULL)
+BEGIN
+    SELECT employe_seq.NEXTVAL INTO :new.ID_EMPLOYE FROM dual;
+END;
+/

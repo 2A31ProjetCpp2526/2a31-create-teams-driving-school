@@ -1,0 +1,214 @@
+//employe.h 
+
+
+#ifndef EMPLOYE_H
+#define EMPLOYE_H
+
+#include <string>
+
+class Employe {
+protected:
+    std::string nom;
+    int matricule;
+    double salaireBase;
+
+public:
+    Employe(const std::string& nom, int matricule, double salaireBase);
+    ~Employe();
+
+    std::string getNom() const;
+    int getMatricule() const;
+    double getSalaireBase() const;
+
+    void setNom(const std::string& nom);
+    void setSalaireBase(double salaireBase);
+
+    void afficher() const;
+};
+
+#endif // EMPLOYE_H
+
+
+
+//employe.cpp
+
+
+#include "Employe.h"
+#include <iostream>
+
+Employe::Employe(const std::string& nom, int matricule, double salaireBase)
+    : nom(nom), matricule(matricule), salaireBase(salaireBase) {}
+
+Employe::~Employe() {}
+
+std::string Employe::getNom() const {
+    return nom;
+}
+
+int Employe::getMatricule() const {
+    return matricule;
+}
+
+double Employe::getSalaireBase() const {
+    return salaireBase;
+}
+
+void Employe::setNom(const std::string& nom) {
+    this->nom = nom;
+}
+
+void Employe::setSalaireBase(double salaireBase) {
+    this->salaireBase = salaireBase;
+}
+
+void Employe::afficher() const {
+    std::cout << "Nom: " << nom << ", Matricule: " << matricule << ", Salaire de base: " << salaireBase << std::endl;
+}
+
+//commercial.h 
+
+#ifndef COMMERCIAL_H
+#define COMMERCIAL_H
+
+#include "Employe.h"
+
+class Commercial : public Employe {
+private:
+    double fixe;
+    double interessement;
+
+public:
+    Commercial(const std::string& nom, int matricule, double salaireBase, double fixe, double interessement);
+    ~Commercial();
+
+    double getFixe() const;
+    double getInteressement() const;
+
+    void setFixe(double fixe);
+    void setInteressement(double interessement);
+
+    void afficher() const;
+};
+
+#endif // COMMERCIAL_H
+
+
+
+//commercial.cpp
+
+#include "Commercial.h"
+#include <iostream>
+
+Commercial::Commercial(const std::string& nom, int matricule, double salaireBase, double fixe, double interessement)
+    : Employe(nom, matricule, salaireBase), fixe(fixe), interessement(interessement) {}
+
+Commercial::~Commercial() {}
+
+double Commercial::getFixe() const {
+    return fixe;
+}
+
+double Commercial::getInteressement() const {
+    return interessement;
+}
+
+void Commercial::setFixe(double fixe) {
+    this->fixe = fixe;
+}
+
+void Commercial::setInteressement(double interessement) {
+    this->interessement = interessement;
+}
+
+void Commercial::afficher() const {
+    Employe::afficher();
+    std::cout << "Fixe: " << fixe << ", Interessement: " << interessement << std::endl;
+}
+
+//personalcommercial.h
+
+
+#ifndef PERSONNELCOMMERCIAL_H
+#define PERSONNELCOMMERCIAL_H
+
+#include <vector>
+#include "Commercial.h"
+
+class PersonnelCommercial {
+private:
+    std::vector<Commercial> commerciaux;
+
+public:
+    PersonnelCommercial();
+    ~PersonnelCommercial();
+
+    void ajouterCommercial(const Commercial& commercial);
+    void afficherCommerciaux() const;
+    void supprimerCommerciauxFaibleVente(double seuil);
+};
+
+#endif // PERSONNELCOMMERCIAL_H
+
+
+//personalcommercial.cpp
+
+#include "PersonnelCommercial.h"
+#include <iostream>
+
+PersonnelCommercial::PersonnelCommercial() {}
+
+PersonnelCommercial::~PersonnelCommercial() {}
+
+void PersonnelCommercial::ajouterCommercial(const Commercial& commercial) {
+    commerciaux.push_back(commercial);
+}
+
+void PersonnelCommercial::afficherCommerciaux() const {
+    for (size_t i = 0; i < commerciaux.size(); ++i) {
+        commerciaux[i].afficher();
+    }
+}
+
+void PersonnelCommercial::supprimerCommerciauxFaibleVente(double seuil) {
+    for (size_t i = 0; i < commerciaux.size(); ++i) {
+        if (commerciaux[i].getInteressement() < seuil) {
+            commerciaux.erase(commerciaux.begin() + i);
+            --i; // Réajuster l'indice après suppression
+        }
+    }
+}
+
+
+//main.cpp 
+
+
+#include "PersonnelCommercial.h"
+#include "Commercial.h"
+#include <iostream>
+
+int main() {
+    PersonnelCommercial personnel;
+
+    Commercial c1("Jean Dupont", 101, 2000, 500, 300);
+    Commercial c2("Marie Curie", 102, 2500, 600, 200);
+    Commercial c3("Pierre Durand", 103, 2200, 550, 400);
+
+    personnel.ajouterCommercial(c1);
+    personnel.ajouterCommercial(c2);
+    personnel.ajouterCommercial(c3);
+
+    std::cout << "Affichage de tous les commerciaux:" << std::endl;
+    personnel.afficherCommerciaux();
+
+    std::cout << "Suppression des commerciaux avec un interessement inferieur a 250..." << std::endl;
+    personnel.supprimerCommerciauxFaibleVente(250);
+
+    std::cout << "Affichage apres suppression:" << std::endl;
+    personnel.afficherCommerciaux();
+
+    return 0;
+}
+
+
+
+

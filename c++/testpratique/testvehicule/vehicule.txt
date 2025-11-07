@@ -1,0 +1,227 @@
+
+//vehicule.h 
+
+
+#ifndef VEHICULE_H
+#define VEHICULE_H
+
+#include <string>
+
+class Vehicule {
+protected:
+    std::string marque;
+    std::string modele;
+    double prixVente;
+
+public:
+    Vehicule(const std::string& marque, const std::string& modele, double prixVente);
+    ~Vehicule();
+
+    std::string getMarque() const;
+    std::string getModele() const;
+    double getPrixVente() const;
+
+    void setMarque(const std::string& marque);
+    void setModele(const std::string& modele);
+    void setPrixVente(double prixVente);
+
+    void afficher() const;
+};
+
+#endif // VEHICULE_H
+
+
+//vehicule.cpp
+
+#include "Vehicule.h"
+#include <iostream>
+
+Vehicule::Vehicule(const std::string& marque, const std::string& modele, double prixVente)
+    : marque(marque), modele(modele), prixVente(prixVente) {}
+
+Vehicule::~Vehicule() {}
+
+std::string Vehicule::getMarque() const {
+    return marque;
+}
+
+std::string Vehicule::getModele() const {
+    return modele;
+}
+
+double Vehicule::getPrixVente() const {
+    return prixVente;
+}
+
+void Vehicule::setMarque(const std::string& marque) {
+    this->marque = marque;
+}
+
+void Vehicule::setModele(const std::string& modele) {
+    this->modele = modele;
+}
+
+void Vehicule::setPrixVente(double prixVente) {
+    this->prixVente = prixVente;
+}
+
+void Vehicule::afficher() const {
+    std::cout << "Marque: " << marque << ", Modele: " << modele << ", Prix de vente: " << prixVente << std::endl;
+}
+
+
+//voiture.h
+
+
+#ifndef VOITURE_H
+#define VOITURE_H
+
+#include "Vehicule.h"
+
+class Voiture : public Vehicule {
+private:
+    int nombrePortes;
+    int puissance;
+    int anneeFabrication;
+
+public:
+    Voiture(const std::string& marque, const std::string& modele, double prixVente, int nombrePortes, int puissance, int anneeFabrication);
+    ~Voiture();
+
+    int getNombrePortes() const;
+    int getPuissance() const;
+    int getAnneeFabrication() const;
+
+    void setNombrePortes(int nombrePortes);
+    void setPuissance(int puissance);
+    void setAnneeFabrication(int anneeFabrication);
+
+    void afficher() const;
+};
+
+#endif // VOITURE_H
+
+
+//voiture.cpp
+
+
+#include "Voiture.h"
+#include <iostream>
+
+Voiture::Voiture(const std::string& marque, const std::string& modele, double prixVente, int nombrePortes, int puissance, int anneeFabrication)
+    : Vehicule(marque, modele, prixVente), nombrePortes(nombrePortes), puissance(puissance), anneeFabrication(anneeFabrication) {}
+
+Voiture::~Voiture() {}
+
+int Voiture::getNombrePortes() const {
+    return nombrePortes;
+}
+
+int Voiture::getPuissance() const {
+    return puissance;
+}
+
+int Voiture::getAnneeFabrication() const {
+    return anneeFabrication;
+}
+
+void Voiture::setNombrePortes(int nombrePortes) {
+    this->nombrePortes = nombrePortes;
+}
+
+void Voiture::setPuissance(int puissance) {
+    this->puissance = puissance;
+}
+
+void Voiture::setAnneeFabrication(int anneeFabrication) {
+    this->anneeFabrication = anneeFabrication;
+}
+
+void Voiture::afficher() const {
+    Vehicule::afficher();
+    std::cout << "Nombre de portes: " << nombrePortes << ", Puissance: " << puissance << ", Annee de fabrication: " << anneeFabrication << std::endl;
+}
+
+//exposition.h
+
+#ifndef EXPOSITION_H
+#define EXPOSITION_H
+
+#include <vector>
+#include "Voiture.h"
+
+class Exposition {
+private:
+    std::vector<Voiture> voitures;
+
+public:
+    Exposition();
+    ~Exposition();
+
+    void ajouterVoiture(const Voiture& voiture);
+    void afficherVoituresParAnnee() const;
+    void supprimerVoituresParPortes(int nombrePortes);
+};
+
+#endif // EXPOSITION_H
+
+
+//exposition.cpp
+
+#include "Exposition.h"
+#include <iostream>
+#include <algorithm>
+
+Exposition::Exposition() {}
+
+Exposition::~Exposition() {}
+
+void Exposition::ajouterVoiture(const Voiture& voiture) {
+    voitures.push_back(voiture);
+}
+
+void Exposition::afficherVoituresParAnnee() const {
+    std::vector<Voiture> voituresTriees = voitures;
+    std::sort(voituresTriees.begin(), voituresTriees.end(), [](const Voiture& a, const Voiture& b) {
+        return a.getAnneeFabrication() < b.getAnneeFabrication();
+    });
+
+    for (const auto& voiture : voituresTriees) {
+        voiture.afficher();
+    }
+}
+
+void Exposition::supprimerVoituresParPortes(int nombrePortes) {
+    voitures.erase(std::remove_if(voitures.begin(), voitures.end(), [nombrePortes](const Voiture& voiture) {
+        return voiture.getNombrePortes() == nombrePortes;
+    }), voitures.end());
+}
+
+//main.cpp
+
+#include "Exposition.h"
+#include "Voiture.h"
+#include <iostream>
+
+int main() {
+    Exposition exposition;
+
+    Voiture v1("Toyota", "Corolla", 20000, 4, 120, 2018);
+    Voiture v2("Ford", "Mustang", 45000, 2, 450, 2020);
+    Voiture v3("Honda", "Civic", 22000, 4, 140, 2019);
+
+    exposition.ajouterVoiture(v1);
+    exposition.ajouterVoiture(v2);
+    exposition.ajouterVoiture(v3);
+
+    std::cout << "Affichage des voitures par annee de fabrication:" << std::endl;
+    exposition.afficherVoituresParAnnee();
+
+    std::cout << "Suppression des voitures avec 4 portes..." << std::endl;
+    exposition.supprimerVoituresParPortes(4);
+
+    std::cout << "Affichage apres suppression:" << std::endl;
+    exposition.afficherVoituresParAnnee();
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1741796939 source:c:\users\msi\desktop\app1_2023\exemplee\produit.cpp
+	"Produit.h"
+	<iostream>
+
+1741796784 c:\users\msi\desktop\app1_2023\exemplee\produit.h
+	<string>
+
+1741797008 source:c:\users\msi\desktop\app1_2023\exemplee\magasin.cpp
+	"Magasin.h"
+	<iostream>
+
+1741797081 c:\users\msi\desktop\app1_2023\exemplee\magasin.h
+	<vector>
+	"produitepicerie.h"
+
+1741796965 c:\users\msi\desktop\app1_2023\exemplee\produitepicerie.h
+	"Produit.h"
+
+1741797094 source:c:\users\msi\desktop\app1_2023\exemplee\produitepicerie.cpp
+	"produitepicerie.h"
+	<iostream>
+
