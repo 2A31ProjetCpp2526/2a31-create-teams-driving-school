@@ -1,4 +1,8 @@
 // Employe.cpp
+<<<<<<< HEAD
+=======
+#pragma clang diagnostic ignored "-Winfinite-recursion"
+>>>>>>> 55e73507bd7b73c07a73bd421243e19c0f584a3d
 #include "Employe.h"
 #include <QDebug>  // Pour debug, optionnel
 
@@ -27,7 +31,11 @@ QString Employe::nom() const
 
 QString Employe::prenom() const
 {
+<<<<<<< HEAD
     return m_prenom;
+=======
+    return m_prenom;  // Pas "prenom()" !
+>>>>>>> 55e73507bd7b73c07a73bd421243e19c0f584a3d
 }
 
 QString Employe::poste() const
