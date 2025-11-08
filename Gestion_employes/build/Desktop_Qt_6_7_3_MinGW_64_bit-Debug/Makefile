@@ -242,34 +242,11 @@ Makefile: ../../Gestion_employes.pro C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmak
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3d.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3d_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetimport.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetutils.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3deffects.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3deffects_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpers.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3diblbaker.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticles.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysics.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3druntimerender.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dutils.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dutils_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
@@ -312,10 +289,6 @@ Makefile: ../../Gestion_employes.pro C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmak
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimeline.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_remoteobjects.pri \
@@ -336,8 +309,6 @@ Makefile: ../../Gestion_employes.pro C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmak
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialbus_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialport.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_shadertools.pri \
-		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_shadertools_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_spatialaudio.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_spatialaudio_private.pri \
 		C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_sql.pri \
@@ -381,6 +352,7 @@ Makefile: ../../Gestion_employes.pro C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmak
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/qt_config.prf \
 		C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmake.conf \
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/exclusive_builds.prf \
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/toolchain.prf \
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/default_pre.prf \
@@ -406,11 +378,14 @@ Makefile: ../../Gestion_employes.pro C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmak
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/yacc.prf \
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/lex.prf \
 		../../Gestion_employes.pro \
+		C:/Qt/6.7.3/mingw_64/lib/Qt6Charts.prl \
+		C:/Qt/6.7.3/mingw_64/lib/Qt6OpenGLWidgets.prl \
 		C:/Qt/6.7.3/mingw_64/lib/Qt6Widgets.prl \
+		C:/Qt/6.7.3/mingw_64/lib/Qt6OpenGL.prl \
 		C:/Qt/6.7.3/mingw_64/lib/Qt6Gui.prl \
+		C:/Qt/6.7.3/mingw_64/lib/Qt6Sql.prl \
 		C:/Qt/6.7.3/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.7.3/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		C:/Qt/6.7.3/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\..\Gestion_employes.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/6.7.3/mingw_64/mkspecs/features/spec_pre.prf:
@@ -585,34 +560,11 @@ C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3d.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3d_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetimport.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetutils.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dassetutils_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3deffects.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3deffects_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dglslparser_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpers.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpers_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpersimpl.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dhelpersimpl_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3diblbaker.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3diblbaker_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticleeffects.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticleeffects_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticles.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dparticles_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysics.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysics_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysicshelpers.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dphysicshelpers_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3druntimerender.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dspatialaudio_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dutils.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick3dutils_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quick_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
@@ -655,10 +607,6 @@ C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimeline.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimeline_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_remoteobjects.pri:
@@ -679,8 +627,6 @@ C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialbus.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialbus_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialport.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_serialport_private.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_shadertools.pri:
-C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_shadertools_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_spatialaudio.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_spatialaudio_private.pri:
 C:/Qt/6.7.3/mingw_64/mkspecs/modules/qt_lib_sql.pri:
@@ -724,6 +670,7 @@ C:/Qt/6.7.3/mingw_64/mkspecs/features/qt_functions.prf:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/qt_config.prf:
 C:/Qt/6.7.3/mingw_64/mkspecs/win32-g++/qmake.conf:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/exclusive_builds.prf:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/toolchain.prf:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/default_pre.prf:
@@ -749,11 +696,14 @@ C:/Qt/6.7.3/mingw_64/mkspecs/features/exceptions.prf:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/yacc.prf:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/lex.prf:
 ../../Gestion_employes.pro:
+C:/Qt/6.7.3/mingw_64/lib/Qt6Charts.prl:
+C:/Qt/6.7.3/mingw_64/lib/Qt6OpenGLWidgets.prl:
 C:/Qt/6.7.3/mingw_64/lib/Qt6Widgets.prl:
+C:/Qt/6.7.3/mingw_64/lib/Qt6OpenGL.prl:
 C:/Qt/6.7.3/mingw_64/lib/Qt6Gui.prl:
+C:/Qt/6.7.3/mingw_64/lib/Qt6Sql.prl:
 C:/Qt/6.7.3/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.7.3/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 C:/Qt/6.7.3/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\Gestion_employes.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
