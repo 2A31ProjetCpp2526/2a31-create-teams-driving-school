@@ -1,0 +1,11 @@
+release/main.o
+release/mainwindow.o
+release/connection.o
+release/seance.o
+release/vehicule.o
+release/circuit.o
+release/client.o
+release/login.o
+release/Employe.o
+release/moc_mainwindow.o
+release/moc_login.o
