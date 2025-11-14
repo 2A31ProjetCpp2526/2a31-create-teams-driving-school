@@ -1,13 +1,13 @@
 #include <iostream>
-#include <string>
-
-using namespace std {
+using namespace std ;
 
 
     int main(){
 
-        cout<<"Hello World!!"<<end;
+        cout<<"Hello World!!"<<endl;
+        cout << "Module GestionProduits actif" << endl;
+        cout << "Ajout de la gestion des produits" << endl;
         return 0;
     }
 
-}
+
