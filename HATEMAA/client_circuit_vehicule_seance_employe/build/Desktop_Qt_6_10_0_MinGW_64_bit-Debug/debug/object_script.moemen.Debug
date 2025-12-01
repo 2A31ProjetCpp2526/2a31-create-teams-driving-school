@@ -1,0 +1,10 @@
+debug/connection.o
+debug/login.o
+debug/main.o
+debug/mainwindow.o
+debug/seance.o
+debug/vehicule.o
+debug/circuit.o
+debug/client.o
+debug/moc_login.o
+debug/moc_mainwindow.o
