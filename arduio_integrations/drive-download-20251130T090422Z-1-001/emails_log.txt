@@ -1,0 +1,30 @@
+=== CLIENT EMAIL OUVERT ===
+Date: 01/12/2025 13:23:55
+ID Séance: 22
+À: mouna.bouzid@esprit.tn
+Client: mouna bouzid (ID: 20)
+Séance: 01/12/2025 10:00
+Sujet: 🚗 RoadMaster - Rappel de Votre Séance de Conduite
+Statut: CLIENT EMAIL OUVERT - UTILISATEUR DOIT CLIQUER ENVOYER
+=================================
+
+=== CLIENT EMAIL OUVERT ===
+Date: 01/12/2025 16:09:13
+ID Séance: 22
+À: mouna.bouzid@esprit.tn
+Client: mouna bouzid (ID: 20)
+Séance: 09/12/2025 10:00
+Sujet: 🚗 RoadMaster - Rappel de Votre Séance de Conduite
+Statut: CLIENT EMAIL OUVERT - UTILISATEUR DOIT CLIQUER ENVOYER
+=================================
+
+=== CLIENT EMAIL OUVERT ===
+Date: 01/12/2025 16:09:35
+ID Séance: 22
+À: mouna.bouzid@esprit.tn
+Client: mouna bouzid (ID: 20)
+Séance: 09/12/2025 10:00
+Sujet: 🚗 RoadMaster - Rappel de Votre Séance de Conduite
+Statut: CLIENT EMAIL OUVERT - UTILISATEUR DOIT CLIQUER ENVOYER
+=================================
+
